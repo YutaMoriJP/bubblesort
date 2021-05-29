@@ -58,7 +58,7 @@ const Sort = () => {
         {status === "pending"
           ? "Sorting..."
           : typeof state === "boolean"
-          ? "Sort"
+          ? "Start Sorting"
           : "Reset"}
       </Button>
       {typeof state === "string" && (
