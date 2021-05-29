@@ -23,6 +23,7 @@ const Sort = () => {
   const [isReset, setIsReset] = React.useState(false);
   const [state, dispatch] = React.useReducer(reducer, true);
   const [status, setStatus] = React.useState("idle");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   let arr = React.useMemo(() => [5, 4, 3, 2, 1], [isReset]);
 
   const handleClick = async () => {
